@@ -36,8 +36,8 @@ Running with the Autochecker: The provided checker.py script will run the progra
         ./checker.py hw3 none
 
 # Command-Line Options 
---nounit: Disables the unit clause heuristic, which means unit clauses will not be automatically assigned truth values.
---nopure: Disables the pure literal heuristic, so pure literals won’t be assigned truth values based on polarity.
+--nounit: Disables the unit clause heuristic, which means unit clauses will not be automatically assigned truth values.<br>
+--nopure: Disables the pure literal heuristic, so pure literals won’t be assigned truth values based on polarity.<br>
 --debug: Enables debug mode, which prints detailed information about the solving process (e.g., current assignments, clause simplifications).
 
 # Expected Outputs 
