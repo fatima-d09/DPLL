@@ -1,42 +1,38 @@
 # DPLL
 The DPLL algorithm optimizes the process of solving Boolean Satisfiability (SAT) problems by using:
 
-    Backtracking search: The algorithm recursively tries different truth assignments and backtracks if a conflict is found.
+- Backtracking search: The algorithm recursively tries different truth assignments and backtracks if a conflict is found.
 
-    Unit Clause Heuristic: If a clause has only one literal, that literal must be true.
+- Unit Clause Heuristic: If a clause has only one literal, that literal must be true.
 
-    Pure Literal Heuristic: If a literal appears only in one polarity (positive or negative), it can be assigned a truth value that satisfies all clauses where it appears.
+- Pure Literal Heuristic: If a literal appears only in one polarity (positive or negative), it can be assigned a truth value that satisfies all clauses where it appears.
 
 # How to Run the Program 
 
-    Running the Program Directly:
+Running the Program Directly: To run the program manually (outside of the autochecker), you can use the sat executable:
 
-To run the program manually (outside of the autochecker), you can use the sat executable:
-
-        Basic Usage:
+    //Basic Usage:
         ./sat < input-file.txt
 
-        Disable Unit Clause Heuristic:
+   //Disable Unit Clause Heuristic:
         ./sat --nounit < input-file.txt
 
-        Disable Pure Literal Heuristic:
+    //Disable Pure Literal Heuristic:
         ./sat --nopure < input-file.txt
 
-        Enable Debugging:
+    //Enable Debugging:
         ./sat --debug < input-file.txt
 
-        Combining Options (e.g., disabling both heuristics and enabling debugging):
+    //Combining Options (e.g., disabling both heuristics and enabling debugging):
         ./sat --nounit --nopure --debug < input-file.txt
 
-    
-    Running with the Autochecker:
 
-The provided checker.py script will run the program on a set of test cases. You can run it in two modes:
+Running with the Autochecker: The provided checker.py script will run the program on a set of test cases. You can run it in two modes:
 
-        With Heuristics Enabled (faster):
+   // With Heuristics Enabled (faster):
         ./checker.py hw3
 
-        With Heuristics Disabled (may take longer):
+    // With Heuristics Disabled (may take longer):
         ./checker.py hw3 none
 
 # Command-Line Options 
