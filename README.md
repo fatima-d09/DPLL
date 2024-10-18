@@ -1,4 +1,4 @@
-# DPLL
+# DPLL (Davis–Putnam–Logemann–Loveland Search Algorithm)
 The DPLL algorithm optimizes the process of solving Boolean Satisfiability (SAT) problems by using:
 
 - Backtracking search: The algorithm recursively tries different truth assignments and backtracks if a conflict is found.
